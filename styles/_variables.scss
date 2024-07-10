@@ -8,3 +8,9 @@ $font-text: "Inter", sans-serif;
 $font-display: "Rubik Scribble", cursave;
 $primary-color: #04da4b;
 $danger-color: red;
+
+@mixin tablet-and-up() {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
